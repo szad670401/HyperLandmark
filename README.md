@@ -14,7 +14,6 @@
 
 + [基于深度学习106点人脸标定,代码即将提交](https://github.com/zeusees/HyperLandmark/blob/master/resource/106points.mp4)
 + 增加多人脸跟踪
-+ 增加106点标定数据,采用算法标注,质量不是特别高.
 
 
 ### TODO
