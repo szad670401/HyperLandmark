@@ -15,6 +15,9 @@
 + [基于深度学习106点人脸标定,代码即将提交](https://github.com/zeusees/HyperLandmark/blob/master/resource/106points.mp4)
 + 增加多人脸跟踪
 
+### 识别APP
+
+- 体验 Android APP：[https://fir.im/HyperLPR](https://fir.im/HyperLPR)
 
 ### TODO
 
