@@ -17,7 +17,7 @@
 
 ### 识别APP
 
-- 体验 Android APP：[https://fir.im/HyperLPR](https://fir.im/HyperLPR)
+- 体验 Android APP：[https://fir.im/HyperLandmark](https://fir.im/HyperLandmark)
 
 ### TODO
 
