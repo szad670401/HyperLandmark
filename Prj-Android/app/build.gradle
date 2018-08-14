@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        applicationId "com.sample.multitrack106"
+        minSdkVersion 19
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+repositories{
+    flatDir {
+    dirs 'libs'
+    }
+}
+
+dependencies {
+    compile(name: 'module', ext: 'aar')
+    compile 'com.android.support:support-v4:23.4.0'
+}

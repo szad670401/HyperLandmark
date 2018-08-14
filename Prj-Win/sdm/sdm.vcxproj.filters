@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\cereal_extension">
+      <UniqueIdentifier>{cf91e05a-46c8-4eb1-90de-2b565bab08ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal">
+      <UniqueIdentifier>{6649c236-4165-40f0-adc6-6790ff8cf224}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\archives">
+      <UniqueIdentifier>{8caf15a9-9991-49bf-adaa-09a94ac52698}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\details">
+      <UniqueIdentifier>{82440347-555d-471b-86ff-2f14b2172ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\external">
+      <UniqueIdentifier>{7a6143a8-82f9-4266-84ab-99bd6f9af298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\types">
+      <UniqueIdentifier>{d18b8df9-387f-4646-860b-989d861470a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\external\rapidxml">
+      <UniqueIdentifier>{fcd50d34-86b3-4330-838b-d6bb99b08fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\external\rapidjson">
+      <UniqueIdentifier>{ec467cca-2006-4e08-a792-1ff3df3cb1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cereal\external\rapidjson\internal">
+      <UniqueIdentifier>{b34f458d-da2c-4886-b51c-a19de42bafe0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\include\feature_descriptor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\hog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\ldmarkmodel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal_extension\mat_cerealisation.hpp">
+      <Filter>头文件\cereal_extension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal_extension\mat_serialization.hpp">
+      <Filter>头文件\cereal_extension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal_extension\ThreadPool.h">
+      <Filter>头文件\cereal_extension</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\access.hpp">
+      <Filter>头文件\cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\cereal.hpp">
+      <Filter>头文件\cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\macros.hpp">
+      <Filter>头文件\cereal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\archives\adapters.hpp">
+      <Filter>头文件\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\archives\binary.hpp">
+      <Filter>头文件\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\archives\json.hpp">
+      <Filter>头文件\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\archives\portable_binary.hpp">
+      <Filter>头文件\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\archives\xml.hpp">
+      <Filter>头文件\cereal\archives</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\details\helpers.hpp">
+      <Filter>头文件\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\details\polymorphic_impl.hpp">
+      <Filter>头文件\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\details\static_object.hpp">
+      <Filter>头文件\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\details\traits.hpp">
+      <Filter>头文件\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\details\util.hpp">
+      <Filter>头文件\cereal\details</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\base64.hpp">
+      <Filter>头文件\cereal\external</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\array.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\base_class.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\bitset.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\boost_variant.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\chrono.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\common.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\complex.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\deque.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\forward_list.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\list.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\map.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\memory.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\polymorphic.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\queue.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\set.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\stack.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\string.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\tuple.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\unordered_map.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\unordered_set.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\utility.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\types\vector.hpp">
+      <Filter>头文件\cereal\types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidxml\rapidxml.hpp">
+      <Filter>头文件\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidxml\rapidxml_iterators.hpp">
+      <Filter>头文件\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidxml\rapidxml_print.hpp">
+      <Filter>头文件\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidxml\rapidxml_utils.hpp">
+      <Filter>头文件\cereal\external\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\document.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\filestream.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\genericstream.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\prettywriter.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\rapidjson.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\reader.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\stringbuffer.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\writer.h">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\internal\pow10.h">
+      <Filter>头文件\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\internal\stack.h">
+      <Filter>头文件\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\include\cereal\external\rapidjson\internal\strfunc.h">
+      <Filter>头文件\cereal\external\rapidjson\internal</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hog.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ldmarkmodel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\feature_descriptor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\src\include\cereal\external\rapidjson\license.txt">
+      <Filter>头文件\cereal\external\rapidjson</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
