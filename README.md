@@ -32,9 +32,8 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 + Android 可直接使用
 
 ### 演示GIF
-
-<div align=center><img width="400" height="400" src="http://i2.bvimg.com/658028/abb7eeed624ee3cb.gif"/></div>
-
+#####加载稍等
+![image](http://i2.bvimg.com/658028/abb7eeed624ee3cb.gifg)
 ### 联系和交流：
 
 关于人脸标定我们正在进行数据收集与算法开发，技术交流、捐献数据可以加入下群。
