@@ -9,7 +9,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 + [参考开源SDM算法](https://github.com/chengzhengxin/sdm)。
 + [基于CNN的人脸标定](https://github.com/lsy17096535/face-landmark)。
-+ [需要测试代码请申请](contact@zeusee.com)
++ 需要测试代码请申请  contact@zeusee.com
 
 
 ### 更新
