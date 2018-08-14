@@ -35,4 +35,5 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 ### 测试样例
 
 ![image](./images/res1.png)
+<div align=center><img width="200" height="200" src="./images/res1.png"/></div>
 
