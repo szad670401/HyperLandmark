@@ -17,9 +17,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
-public class MultitrackerActivity extends Activity {
+public class FaceTrackerActivity extends Activity {
     private final static int CAMERA_REQUEST_CODE = 0x111;
-    public Accelerometer mAcc;
 
     public void copyFilesFromAssets(Context context, String oldPath, String newPath) {
         try {
@@ -94,9 +93,6 @@ public class MultitrackerActivity extends Activity {
         setContentView(R.layout.activity_multitracker);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //开启重力传感器监听
-        mAcc = new Accelerometer(this.getApplicationContext());
-        mAcc.start();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             int permission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
@@ -113,10 +109,7 @@ public class MultitrackerActivity extends Activity {
         }
         verifyStoragePermissions(this);
 
-
         InitModelFiles();
-
-
 
     }
 
@@ -141,7 +134,6 @@ public class MultitrackerActivity extends Activity {
     @Override
     public void onResume() {
         super.onResume();
-        mAcc.start();
 
         final FaceOverlapFragment fragment = (FaceOverlapFragment) getFragmentManager()
                 .findFragmentById(R.id.overlapFragment);
@@ -158,7 +150,6 @@ public class MultitrackerActivity extends Activity {
     @Override
     public void onPause() {
         super.onPause();
-        mAcc.stop();
     }
 
     @Override

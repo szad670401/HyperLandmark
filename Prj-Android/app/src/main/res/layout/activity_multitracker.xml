@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
 	android:background="@android:color/white"
 
-    tools:context=".MultitrackerActivity"
+    tools:context=".FaceTrackerActivity"
 	>
 
 	<com.sample.tracking.FixedAspectRatioFrameLayout

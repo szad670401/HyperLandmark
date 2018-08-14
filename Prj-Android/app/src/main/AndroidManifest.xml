@@ -19,7 +19,7 @@
 
         android:label="@string/app_name">
         <activity
-            android:name="com.sample.tracking.MultitrackerActivity"
+            android:name="com.sample.tracking.FaceTrackerActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar"
             android:screenOrientation="portrait" >

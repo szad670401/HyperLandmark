@@ -4,9 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-/**
- * 显示比例相关设置
- */
+
 public class FixedAspectRatioFrameLayout extends FrameLayout {
     private int mAspectRatioWidth = 480;
     private int mAspectRatioHeight = 640;

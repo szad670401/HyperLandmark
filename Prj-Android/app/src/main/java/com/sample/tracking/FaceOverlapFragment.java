@@ -31,21 +31,9 @@ import zeusees.tracking.FaceTracking;
 
 
 public class FaceOverlapFragment extends CameraOverlapFragment {
-	 private static final int MOBILE_FACE_DETECT = 0x00000001;
 
-    private static final int MOBILE_TRACKING_MULTI_THREAD = 0x00000000;
-    private static final int MOBILE_TRACKING_ENABLE_DEBOUNCE = 0x00000010;
-    private static final int MOBILE_TRACKING_ENABLE_FACE_ACTION = 0x00000020;
-    private static final int MOBILE_TRACKING_DEFAULT_CONFIG =
-            MOBILE_TRACKING_MULTI_THREAD |
-            MOBILE_TRACKING_ENABLE_DEBOUNCE|
-            MOBILE_FACE_DETECT|
-            MOBILE_TRACKING_ENABLE_FACE_ACTION ;
-
-
-    private static final String TAG = "FaceOverlapFragment";
     private static final int MESSAGE_DRAW_POINTS = 100;
-    private static final boolean DEBUG = false;
+
     private FaceTracking mMultiTrack106 = null;
     private TrackCallBack mListener;
     private HandlerThread mHandlerThread;
@@ -53,11 +41,9 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
 
     private byte mNv21Data[];
     private byte[] mTmpBuffer;
-    private static int mFps;
-    private int mCount = 0;
+
     private int frameIndex = 0;
-    private long mCurrentTime = 0;
-    private boolean mIsFirstCount = true;
+
     private Paint mPaint;
     private Object lockObj = new Object();
     private boolean mIsPaused = false;
@@ -114,17 +100,6 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
 
         boolean frontCamera = (CameraFacing == Camera.CameraInfo.CAMERA_FACING_FRONT);
 
-        int dir = Accelerometer.getDirection();
-
-        if(!frontCamera && dir == 0){
-        	dir = 2;
-        }else if(!frontCamera && dir == 2){
-        	dir = 0;
-        }
-
-        if (((mCameraInfo.orientation == 270 && (dir & 1) == 1) ||
-                (mCameraInfo.orientation == 90 && (dir & 1) == 0)))
-            dir = (dir ^ 2);
 
 
 
@@ -137,24 +112,6 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
             mMultiTrack106.Update(mTmpBuffer, PREVIEW_HEIGHT,PREVIEW_WIDTH);
         }
         frameIndex+=1;
-
-
-        long timer  = System.currentTimeMillis();
-        mCount++;
-        if(mIsFirstCount){
-        	mCurrentTime = timer;
-        	mIsFirstCount = false;
-        }else{
-        	int cost = (int)(timer - mCurrentTime);
-        	 if(cost >= 1000){
-             	mCurrentTime = timer;
-             	mFps = (int)((mCount *1000)/cost);
-             	mCount = 0;
-             }
-        }
-
-
-        //绘制人脸框
 
         List<Face> faceActions = mMultiTrack106.getTrackingInfo();
 
@@ -174,7 +131,7 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
             canvas.setMatrix(getMatrix());
             boolean rotate270 = mCameraInfo.orientation == 270;
             for (Face r : faceActions) {
-                // Rect rect = r.getRect();
+
                 Rect rect=new Rect(PREVIEW_HEIGHT - r.left,r.top,PREVIEW_HEIGHT - r.right,r.bottom);
 
                 PointF[] points = new PointF[106];
@@ -221,7 +178,7 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
         this.mIsPaused = false;
 
         if (mMultiTrack106 == null) {
-            long start_init = System.currentTimeMillis();
+
             AuthCallback authCallback = new AuthCallback() {
                 @Override
                 public void onAuthResult(boolean succeed, String errMessage) {
@@ -231,13 +188,11 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
 
                 }
             };
-            int config = MOBILE_TRACKING_DEFAULT_CONFIG | MOBILE_TRACKING_ENABLE_FACE_ACTION;
+
             if (authCallback != null) {
                 mMultiTrack106 = new FaceTracking("/sdcard/ZeuseesFaceTracking/models");
             }
 
-            long end_init = System.currentTimeMillis();
-            if (DEBUG) Log.i("track106", "init cost " + (end_init - start_init) + " ms");
         }
     }
 
@@ -265,8 +220,4 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
                              int id, int eyeBlink, int mouthAh, int headYaw, int headPitch, int browJump);
     }
 
-    private int checkFlag(int action, int flag) {
-        int res = action & flag;
-        return res == 0 ? 0 : 1;
-    }
 }
