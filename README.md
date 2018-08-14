@@ -1,4 +1,4 @@
-# Open Source Face Landmark
+# Open Source Face Landmark 106 points
 
 ### 介绍
 良心级开源人脸标定算法,人脸美颜,美妆,配合式活体检测,人脸校准的预处理步骤.该项目Windows工程基于传统的SDM算法,通过修改开源代码,精简保留测试部分代码,优化代码结构.
@@ -13,8 +13,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 
 ### 更新
-+ 提交基于深度学习人脸标定android代码，速度快，可商用，arm 1.2GHz 单张人脸7ms (2018.08.14)
-+ [基于深度学习106点人脸标定,代码即将提交](https://github.com/zeusees/HyperLandmark/blob/master/resource/106points.mp4)
++ 提交基于深度学习人脸标定android代码，速度快，可商用，Qualcomm 820 (st) 单张人脸7ms (2018.08.14)
 + 增加多人脸跟踪
 
 ### 识别APP
@@ -23,7 +22,6 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ### TODO
 
-+ 完善移动端版本(Android版已经提交)
 + SIMD指令优化hog特征提取速度
 + 丰富数据,提交一版106点标定模型(已经提交)
 
@@ -33,9 +31,9 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 + Windows demo 依赖 OpenCV
 + Android 可直接使用
 
-### 测试样例
+### 演示GIF
 
-<div align=center><img width="400" height="400" src="./images/res1.png"/></div>
+<div align=center><img width="400" height="400" src="http://i2.bvimg.com/658028/abb7eeed624ee3cb.gif"/></div>
 
 ### 联系和交流：
 
