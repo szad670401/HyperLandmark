@@ -38,7 +38,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ### 演示GIF
 
-[演示视频](http://i4.bvimg.com/658028/53aa8855c674a5d0.gif)
+[演示视频](./resource/demo.gif)
 
 ### 联系和交流：
 
