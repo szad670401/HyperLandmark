@@ -40,6 +40,8 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ![image](./resource/demo.gif)
 
+![image](./resource/demo2.gif)
+
 ### 联系和交流：
 
 关于人脸标定我们正在进行数据收集与算法开发，技术交流、捐献数据可以加入下群。
