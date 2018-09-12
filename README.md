@@ -10,7 +10,6 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 + [相关技术博客](https://blog.csdn.net/lsy17096535/article/details/81116221)
 + [参考开源SDM算法](https://github.com/chengzhengxin/sdm)。
 + [基于CNN的人脸标定](https://github.com/lsy17096535/face-landmark)。
-+ 测试代码请申请   contact@zeusee.com
 
 
 ### 特性
@@ -27,8 +26,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ### TODO
 
-+ SIMD指令优化hog特征提取速度
-+ 丰富数据,提交一版106点标定模型(已经提交)
++ 提交一版人脸贴纸动画
 
 
 ###  依赖
