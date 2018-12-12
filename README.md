@@ -10,7 +10,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 + [相关技术博客](https://blog.csdn.net/lsy17096535/article/details/81116221)
 + [参考开源SDM算法](https://github.com/chengzhengxin/sdm)。
 + [基于CNN的人脸标定](https://github.com/lsy17096535/face-landmark)。
-
++ [HyperLandmark 106点序号](https://github.com/zeusees/HyperLandmark/blob/master/images/landmark_order.png)
 
 ### 特性
 
