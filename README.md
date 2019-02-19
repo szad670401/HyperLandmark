@@ -20,7 +20,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 + 速度快，Android平台代码在 Qualcomm 820 (st) 单张人脸7ms (2018.08.14)
 + 增加多人脸跟踪
 
-### 识别APP
+### APP
 
 - 体验 Android APP：[https://fir.im/HyperLandmark](https://fir.im/HyperLandmark)
 
