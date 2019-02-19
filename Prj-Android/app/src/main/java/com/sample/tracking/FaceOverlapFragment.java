@@ -138,8 +138,6 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
                 for(int i = 0 ; i < 106 ; i++)
                 {
                     points[i]  = new PointF(r.landmarks[i*2],r.landmarks[i*2+1]);
-
-
                 }
 
                 float[] visibles =  new float[106];
@@ -147,13 +145,9 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
 
                 for (int i = 0; i < points.length; i++) {
                     visibles[i] = 1.0f;
-
-
                     if (rotate270) {
                         points[i].x = PREVIEW_HEIGHT-points[i].x;
-
                     }
-
                 }
 
                 STUtils.drawFaceRect(canvas,rect, PREVIEW_HEIGHT,
@@ -165,7 +159,6 @@ public class FaceOverlapFragment extends CameraOverlapFragment {
             mOverlap.getHolder().unlockCanvasAndPost(canvas);
         }
     }
-
     @Override
     public void onDestroy() {
         super.onDestroy();

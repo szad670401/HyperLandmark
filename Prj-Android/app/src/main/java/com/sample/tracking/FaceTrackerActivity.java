@@ -7,15 +7,20 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.pm.PackageManager;
 import android.os.Environment;
+import android.support.annotation.NonNull;
+import android.support.v4.content.PermissionChecker;
 import android.util.Log;
 import android.view.WindowManager;
 import android.widget.Toast;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
+import com.hyq.hm.hyperlandmark.R;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class FaceTrackerActivity extends Activity {
     private final static int CAMERA_REQUEST_CODE = 0x111;
@@ -64,26 +69,8 @@ public class FaceTrackerActivity extends Activity {
         copyFilesFromAssets(this, assetPath, sdcardPath);
 
     }
-    private static final int REQUEST_EXTERNAL_STORAGE = 1;
-    private static String[] PERMISSIONS_STORAGE = {
-            "android.permission.READ_EXTERNAL_STORAGE",
-            "android.permission.WRITE_EXTERNAL_STORAGE" };
-
-
-    public static void verifyStoragePermissions(Activity activity) {
-
-        try {
-            //检测是否有写的权限
-            int permission = ActivityCompat.checkSelfPermission(activity,
-                    "android.permission.WRITE_EXTERNAL_STORAGE");
-            if (permission != PackageManager.PERMISSION_GRANTED) {
-                // 没有写的权限，去申请写的权限，会弹出对话框
-                ActivityCompat.requestPermissions(activity, PERMISSIONS_STORAGE,REQUEST_EXTERNAL_STORAGE);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+    private String[] denied;
+    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA};
 
 
 
@@ -95,40 +82,52 @@ public class FaceTrackerActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,  WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            int permission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA);
-            if (permission != PackageManager.PERMISSION_GRANTED) {
-                if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                        Manifest.permission.CAMERA)) {
-                    Toast.makeText(this, "Please grant camera permission first", Toast.LENGTH_SHORT).show();
-                } else {
-                    ActivityCompat.requestPermissions(this,
-                            new String[]{Manifest.permission.CAMERA},
-                            CAMERA_REQUEST_CODE);
+            ArrayList<String> list = new ArrayList<>();
+            for (int i = 0; i < permissions.length; i++) {
+                if (PermissionChecker.checkSelfPermission(this, permissions[i]) == PackageManager.PERMISSION_DENIED) {
+                    list.add(permissions[i]);
                 }
             }
+            if (list.size() != 0) {
+                denied = new String[list.size()];
+                for (int i = 0; i < list.size(); i++) {
+                    denied[i] = list.get(i);
+                }
+                ActivityCompat.requestPermissions(this, denied, 5);
+            } else {
+                init();
+            }
+        } else {
+            init();
         }
-        verifyStoragePermissions(this);
-
-        InitModelFiles();
-
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
-        switch (requestCode) {
-            case CAMERA_REQUEST_CODE: {
-                // 如果请求被拒绝，那么通常grantResults数组为空
-                if (grantResults.length > 0
-                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    //申请成功，进行相应操作
-
-                } else {
-                    //申请失败，可以继续向用户解释。
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == 5) {
+            boolean isDenied = false;
+            for (int i = 0; i < denied.length; i++) {
+                String permission = denied[i];
+                for (int j = 0; j < permissions.length; j++) {
+                    if (permissions[j].equals(permission)) {
+                        if (grantResults[j] != PackageManager.PERMISSION_GRANTED) {
+                            isDenied = true;
+                            break;
+                        }
+                    }
                 }
-                return;
+            }
+            if (isDenied) {
+                Toast.makeText(this, "请开启权限", Toast.LENGTH_SHORT).show();
+            } else {
+                init();
+
             }
         }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+    }
+    private void init(){
+        InitModelFiles();
     }
 
     @Override
