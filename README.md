@@ -30,6 +30,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ### TODO
 
++ dense face landmark (800 points)
 + Facial action recognition
 + Euler angle , face pose estimation. 
 
