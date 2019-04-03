@@ -56,3 +56,11 @@ Windows实现是基于免费intraface实现的，与android并不相同。
 关于人脸标定我们正在进行数据收集与算法开发，技术交流、捐献数据可以加入下群。
 + 交流群 724142079
 
+### 作者
+- [Jack Yu]( https://github.com/szad670401)(jack-yu-business@foxmail.com)
+
+
+
+
+
+
