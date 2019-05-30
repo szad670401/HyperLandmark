@@ -6,6 +6,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 
 #### Related Resources
++ [基于HyperLandmark的活体检测](https://xiangzi.site/2019/04/19/%E6%B4%BB%E4%BD%93%E8%AF%86%E5%88%AB/)
 + [基于SDM的HyperLandmark-iOS实现](https://github.com/elhoangvu/HyperLandmark-iOS) (2019.02.06)
 + [相关技术博客](https://blog.csdn.net/lsy17096535/article/details/81116221)
 + [参考开源SDM算法](https://github.com/chengzhengxin/sdm)。
