@@ -1,0 +1,8 @@
+Executable : /Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+--build
+/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/release/arm64-v8a
+--target
+zeuseesTracking-lib
+jvmArgs : 
+

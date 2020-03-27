@@ -42,9 +42,8 @@ public class MainActivity extends AppCompatActivity {
             if (fileNames.length > 0) {
                 // directory
                 File file = new File(newPath);
-                if (!file.mkdir())
-                {
-                    Log.d("mkdir","can't make folder");
+                if (!file.mkdir()) {
+                    Log.d("mkdir", "can't make folder");
 
                 }
 
@@ -71,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    void InitModelFiles()
-    {
+    void InitModelFiles() {
 
         String assetPath = "ZeuseesFaceTracking";
         String sdcardPath = Environment.getExternalStorageDirectory()
@@ -83,10 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String[] denied;
-    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.CAMERA};
+    private String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
-    private FaceTracking mMultiTrack106 = null;
-    private boolean mTrack106 = false;
+    private boolean mTrack106 = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         if (requestCode == 5) {
@@ -156,17 +154,16 @@ public class MainActivity extends AppCompatActivity {
     private SeekBar seekBarA;
     private SeekBar seekBarB;
     private SeekBar seekBarC;
-    private void init(){
-        InitModelFiles();
 
-        mMultiTrack106 = new FaceTracking("/sdcard/ZeuseesFaceTracking/models");
+    private void init() {
+        InitModelFiles();
 
         cameraOverlap = new CameraOverlap(this);
         mNv21Data = new byte[CameraOverlap.PREVIEW_WIDTH * CameraOverlap.PREVIEW_HEIGHT * 2];
         mFramebuffer = new GLFramebuffer();
         mFrame = new GLFrame();
         mPoints = new GLPoints();
-        mBitmap = new GLBitmap(this,R.drawable.ic_logo);
+        mBitmap = new GLBitmap(this, R.drawable.ic_logo);
         mHandlerThread = new HandlerThread("DrawFacePointsThread");
         mHandlerThread.start();
         mHandler = new Handler(mHandlerThread.getLooper());
@@ -179,60 +176,63 @@ public class MainActivity extends AppCompatActivity {
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        if(mEglUtils == null){
+                        if (mEglUtils == null) {
                             return;
                         }
-                        mFrame.setS(seekBarA.getProgress()/100.0f);
-                        mFrame.setH(seekBarB.getProgress()/360.0f);
-                        mFrame.setL(seekBarC.getProgress()/100.0f - 1);
+                        mFrame.setS(seekBarA.getProgress() / 100.0f);
+                        mFrame.setH(seekBarB.getProgress() / 360.0f);
+                        mFrame.setL(seekBarC.getProgress() / 100.0f - 1);
 
-                        if(mTrack106){
-                            mMultiTrack106.FaceTrackingInit(mNv21Data,CameraOverlap.PREVIEW_HEIGHT,CameraOverlap.PREVIEW_WIDTH);
+                        if (mTrack106) {
+                            FaceTracking.getInstance().FaceTrackingInit("/sdcard/ZeuseesFaceTracking/models", mNv21Data, CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
                             mTrack106 = !mTrack106;
-                        }else {
-                            mMultiTrack106.Update(mNv21Data, CameraOverlap.PREVIEW_HEIGHT,CameraOverlap.PREVIEW_WIDTH);
+                            return;
+                        } else {
+                            FaceTracking.getInstance().Update(mNv21Data, CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH, true);
                         }
                         boolean rotate270 = cameraOverlap.getOrientation() == 270;
 
-                        List<Face> faceActions = mMultiTrack106.getTrackingInfo();
+                        List<Face> faceActions = FaceTracking.getInstance().getTrackingInfo();
+
+
                         float[] p = null;
                         float[] points = null;
                         for (Face r : faceActions) {
-                            points = new float[106*2];
-                            Rect rect=new Rect(CameraOverlap.PREVIEW_HEIGHT - r.left,r.top,CameraOverlap.PREVIEW_HEIGHT - r.right,r.bottom);
-                            for(int i = 0 ; i < 106 ; i++) {
+                            points = new float[106 * 2];
+                            Rect rect = new Rect(CameraOverlap.PREVIEW_HEIGHT - r.left, r.top, CameraOverlap.PREVIEW_HEIGHT - r.right, r.bottom);
+                            for (int i = 0; i < 106; i++) {
                                 int x;
                                 if (rotate270) {
-                                    x = r.landmarks[i*2];
-                                }else{
-                                    x = CameraOverlap.PREVIEW_HEIGHT-r.landmarks[i*2];
+                                    x = r.landmarks[i * 2];
+                                } else {
+                                    x = CameraOverlap.PREVIEW_HEIGHT - r.landmarks[i * 2];
                                 }
-                                int y = r.landmarks[i*2+1];
-                                points[i*2] = view2openglX(x,CameraOverlap.PREVIEW_HEIGHT);
-                                points[i*2+1] = view2openglY(y,CameraOverlap.PREVIEW_WIDTH);
-                                if(i == 70){
+                                int y = r.landmarks[i * 2 + 1];
+                                points[i * 2] = view2openglX(x, CameraOverlap.PREVIEW_HEIGHT);
+                                points[i * 2 + 1] = view2openglY(y, CameraOverlap.PREVIEW_WIDTH);
+                                if (i == 70) {
                                     p = new float[8];
-                                    p[0] = view2openglX(x + 20,CameraOverlap.PREVIEW_HEIGHT);
-                                    p[1] = view2openglY(y - 20,CameraOverlap.PREVIEW_WIDTH);
-                                    p[2] = view2openglX(x - 20,CameraOverlap.PREVIEW_HEIGHT);
-                                    p[3] = view2openglY(y - 20,CameraOverlap.PREVIEW_WIDTH);
-                                    p[4] = view2openglX(x + 20,CameraOverlap.PREVIEW_HEIGHT);
-                                    p[5] = view2openglY(y + 20,CameraOverlap.PREVIEW_WIDTH);
-                                    p[6] = view2openglX(x - 20,CameraOverlap.PREVIEW_HEIGHT);
-                                    p[7] = view2openglY(y + 20,CameraOverlap.PREVIEW_WIDTH);
+                                    p[0] = view2openglX(x + 20, CameraOverlap.PREVIEW_HEIGHT);
+                                    p[1] = view2openglY(y - 20, CameraOverlap.PREVIEW_WIDTH);
+                                    p[2] = view2openglX(x - 20, CameraOverlap.PREVIEW_HEIGHT);
+                                    p[3] = view2openglY(y - 20, CameraOverlap.PREVIEW_WIDTH);
+                                    p[4] = view2openglX(x + 20, CameraOverlap.PREVIEW_HEIGHT);
+                                    p[5] = view2openglY(y + 20, CameraOverlap.PREVIEW_WIDTH);
+                                    p[6] = view2openglX(x - 20, CameraOverlap.PREVIEW_HEIGHT);
+                                    p[7] = view2openglY(y + 20, CameraOverlap.PREVIEW_WIDTH);
                                 }
                             }
-                            if(p != null){
+                            if (p != null) {
                                 break;
                             }
                         }
                         int tid = 0;
-                        if(p != null){
+                        if (p != null) {
                             mBitmap.setPoints(p);
-                            tid = mBitmap.drawFrame();
+//                            tid = mBitmap.drawFrame();
                         }
-                        mFrame.drawFrame(tid,mFramebuffer.drawFrameBuffer(),mFramebuffer.getMatrix());
-                        if(points != null){
+                        mFrame.drawFrame(tid, mFramebuffer.drawFrameBuffer(), mFramebuffer.getMatrix());
+                        if (points != null) {
                             mPoints.setPoints(points);
                             mPoints.drawPoints();
                         }
@@ -251,20 +251,20 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void surfaceChanged(final SurfaceHolder holder, int format, final int width, final int height) {
-                Log.d("=============","surfaceChanged");
+                Log.d("=============", "surfaceChanged");
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        if(mEglUtils != null){
+                        if (mEglUtils != null) {
                             mEglUtils.release();
                         }
                         mEglUtils = new EGLUtils();
                         mEglUtils.initEGL(holder.getSurface());
                         mFramebuffer.initFramebuffer();
                         mFrame.initFrame();
-                        mFrame.setSize(width,height, CameraOverlap.PREVIEW_HEIGHT,CameraOverlap.PREVIEW_WIDTH );
+                        mFrame.setSize(width, height, CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
                         mPoints.initPoints();
-                        mBitmap.initFrame(CameraOverlap.PREVIEW_HEIGHT,CameraOverlap.PREVIEW_WIDTH);
+                        mBitmap.initFrame(CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
                         cameraOverlap.openCamera(mFramebuffer.getSurfaceTexture());
                     }
                 });
@@ -281,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
                         mFrame.release();
                         mPoints.release();
                         mBitmap.release();
-                        if(mEglUtils != null){
+                        if (mEglUtils != null) {
                             mEglUtils.release();
                             mEglUtils = null;
                         }
@@ -290,20 +290,20 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        if(mSurfaceView.getHolder().getSurface()!= null &&mSurfaceView.getWidth() > 0){
+        if (mSurfaceView.getHolder().getSurface() != null && mSurfaceView.getWidth() > 0) {
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
-                    if(mEglUtils != null){
+                    if (mEglUtils != null) {
                         mEglUtils.release();
                     }
                     mEglUtils = new EGLUtils();
                     mEglUtils.initEGL(mSurfaceView.getHolder().getSurface());
                     mFramebuffer.initFramebuffer();
                     mFrame.initFrame();
-                    mFrame.setSize(mSurfaceView.getWidth(),mSurfaceView.getHeight(), CameraOverlap.PREVIEW_HEIGHT,CameraOverlap.PREVIEW_WIDTH );
+                    mFrame.setSize(mSurfaceView.getWidth(), mSurfaceView.getHeight(), CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
                     mPoints.initPoints();
-                    mBitmap.initFrame(CameraOverlap.PREVIEW_HEIGHT,CameraOverlap.PREVIEW_WIDTH);
+                    mBitmap.initFrame(CameraOverlap.PREVIEW_HEIGHT, CameraOverlap.PREVIEW_WIDTH);
                     cameraOverlap.openCamera(mFramebuffer.getSurfaceTexture());
                 }
             });
@@ -312,15 +312,23 @@ public class MainActivity extends AppCompatActivity {
         seekBarB = findViewById(R.id.seek_bar_b);
         seekBarC = findViewById(R.id.seek_bar_c);
     }
-    private float view2openglX(int x,int width){
-        float centerX = width/2.0f;
+
+    private float view2openglX(int x, int width) {
+        float centerX = width / 2.0f;
         float t = x - centerX;
-        return t/centerX;
-    }
-    private float view2openglY(int y,int height){
-        float centerY = height/2.0f;
-        float s = centerY - y;
-        return s/centerY;
+        return t / centerX;
     }
 
+    private float view2openglY(int y, int height) {
+        float centerY = height / 2.0f;
+        float s = centerY - y;
+        return s / centerY;
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        FaceTracking.getInstance().relesaseJni();
+        super.onDestroy();
+    }
 }

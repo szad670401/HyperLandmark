@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/abi-armeabi-v7a/OpenCVModules.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/abi-armeabi-v7a/OpenCVConfig.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/OpenCVConfig.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/CMakeLists.txt",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/CMakeLists.txt",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/OpenCVConfig-version.cmake",
+    "/Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/abi-armeabi-v7a/OpenCVModules-release.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/release/armeabi-v7a\" --target clean"
+  ],
+  "libraries": {
+    "zeuseesTracking-lib-Release-armeabi-v7a": {
+      "artifactName": "zeuseesTracking-lib",
+      "buildCommand": "/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/release/armeabi-v7a\" --target zeuseesTracking-lib",
+      "abi": "armeabi-v7a",
+      "output": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so"
+    }
+  }
+}

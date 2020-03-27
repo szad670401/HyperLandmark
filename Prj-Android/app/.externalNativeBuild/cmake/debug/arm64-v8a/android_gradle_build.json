@@ -1,0 +1,51 @@
+{
+  "stringTable": {
+    "0": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android --gcc-toolchain=/Users/yang/Documents/NDK/android-ndk-r16b/toolchains/aarch64-linux-android-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/yang/Documents/NDK/android-ndk-r16b/sysroot -DzeuseesTracking_lib_EXPORTS -I../../../../src/main/cpp/include -isystem ../../../../src/main/cpp/opencv342/sdk/native/jni/include -isystem ../../../../src/main/cpp/opencv342/sdk/native/jni/include/opencv -isystem /Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include -isystem /Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -isystem /Users/yang/Documents/NDK/android-ndk-r16b/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -frtti -fexceptions -std=c++11 -fopenmp -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/abi-arm64-v8a/OpenCVModules-release.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/abi-arm64-v8a/OpenCVConfig.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/OpenCVConfig.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/CMakeLists.txt",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/abi-arm64-v8a/OpenCVModules.cmake",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/CMakeLists.txt",
+    "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/OpenCVConfig-version.cmake",
+    "/Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a\" --target clean"
+  ],
+  "libraries": {
+    "zeuseesTracking-lib-Debug-arm64-v8a": {
+      "buildCommand": "/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a\" --target zeuseesTracking-lib",
+      "buildType": "debug",
+      "toolchain": "11392725",
+      "abi": "arm64-v8a",
+      "artifactName": "zeuseesTracking-lib",
+      "files": [
+        {
+          "src": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/mtcnn.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/tracking-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/build/intermediates/cmake/debug/obj/arm64-v8a/libzeuseesTracking-lib.so"
+    }
+  },
+  "toolchains": {
+    "11392725": {
+      "cppCompilerExecutable": "/Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

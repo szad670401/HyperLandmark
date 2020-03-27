@@ -136,14 +136,6 @@ public class FaceTrackerActivity extends Activity {
 
         final FaceOverlapFragment fragment = (FaceOverlapFragment) getFragmentManager()
                 .findFragmentById(R.id.overlapFragment);
-        fragment.registTrackCallback(new FaceOverlapFragment.TrackCallBack() {
-
-            @Override
-            public void onTrackdetected(final int value, final float pitch, final float roll, final float yaw, final float eye_dist,
-                                        final int id, final int eyeBlink, final int mouthAh, final int headYaw, final int headPitch, final int browJump) {
-
-            }
-        });
     }
 
     @Override

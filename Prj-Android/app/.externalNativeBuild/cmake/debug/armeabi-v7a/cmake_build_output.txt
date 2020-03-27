@@ -1,0 +1,9 @@
+CMake Warning at /Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /Users/yang/Documents/NDK/android-ndk-r16b
+Call Stack (most recent call first):
+  .externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt
+
+
+Configuring done

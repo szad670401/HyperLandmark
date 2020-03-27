@@ -1,0 +1,4 @@
+# ninja log v5
+1	1907	1585155927	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	42b9afa066e858b
+1	3872	1585155929	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	945ccecf76680c91
+3873	4902	1585155930	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so	47de03c14a70534a

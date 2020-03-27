@@ -1,0 +1,409 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app",
+  "buildDirectory": "/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DANDROID_ABI\u003darm64-v8a",
+    "-DANDROID_PLATFORM\u003dandroid-21",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/build/intermediates/cmake/debug/obj/arm64-v8a",
+    "-DCMAKE_BUILD_TYPE\u003dDebug",
+    "-DANDROID_NDK\u003d/Users/yang/Documents/NDK/android-ndk-r16b",
+    "-DCMAKE_CXX_FLAGS\u003d-std\u003dc++11 -frtti -fexceptions",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a",
+    "-DCMAKE_SYSTEM_VERSION\u003d21",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_ANDROID_NDK\u003d/Users/yang/Documents/NDK/android-ndk-r16b",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake",
+    "-G Ninja",
+    "-DCMAKE_MAKE_PROGRAM\u003d/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"CMake Warning at /Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):\n  Using custom NDK path (ANDROID_NDK is set):\n  /Users/yang/Documents/NDK/android-ndk-r16b\nCall Stack (most recent call first):\n  /Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)\n  CMakeLists.txt\n\n","title":"Warning","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: CMake Warning at /Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /Users/yang/Documents/NDK/android-ndk-r16b
+Call Stack (most recent call first):
+  /Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt
+
+
+CMAKE SERVER: CMake Warning at /Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /Users/yang/Documents/NDK/android-ndk-r16b
+Call Stack (most recent call first):
+  /Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt
+
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+CMAKE SERVER: Check for working C compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":33,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working C compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working C compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+CMAKE SERVER: Check for working C compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: Detecting C compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":65,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: Detecting C compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: Detecting C compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":96,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":126,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":155,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting C compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: Detecting C compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+CMAKE SERVER: Check for working CXX compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":184,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Check for working CXX compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Check for working CXX compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+CMAKE SERVER: Check for working CXX compiler: /Users/yang/Documents/NDK/android-ndk-r16b/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ -- works
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: Detecting CXX compiler ABI info
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":211,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compiler ABI info - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: Detecting CXX compiler ABI info - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: Detecting CXX compile features
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":237,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":262,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":287,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":311,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Detecting CXX compile features - done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: Detecting CXX compile features - done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":334,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Found OpenCV: /Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342 (found version \"3.4.6\") ","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Found OpenCV: /Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342 (found version "3.4.6") 
+CMAKE SERVER: Found OpenCV: /Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342 (found version "3.4.6") 
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":950,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring done
+CMAKE SERVER: Configuring done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"compute"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":500,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"Generating done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Generating done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"cmakeInputs"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake","/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/FindPackageMessage.cmake"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","../../../../NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake","../../../../NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake","src/main/cpp/CMakeLists.txt","src/main/cpp/opencv342/sdk/native/jni/OpenCVConfig-version.cmake","src/main/cpp/opencv342/sdk/native/jni/OpenCVConfig.cmake","src/main/cpp/opencv342/sdk/native/jni/abi-arm64-v8a/OpenCVConfig.cmake","src/main/cpp/opencv342/sdk/native/jni/abi-arm64-v8a/OpenCVModules.cmake","src/main/cpp/opencv342/sdk/native/jni/abi-arm64-v8a/OpenCVModules-release.cmake"]},{"isCMake":false,"isTemporary":true,"sources":[".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.c",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/feature_tests.cxx",".externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"/Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"codemodel"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"configurations":[{"name":"Debug","projects":[{"buildDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a","name":"Project","sourceDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app","targets":[{"artifacts":["/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/build/intermediates/cmake/debug/obj/arm64-v8a/libzeuseesTracking-lib.so"],"buildDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a/src/main/cpp","fileGroups":[{"compileFlags":"-isystem /Users/yang/Documents/NDK/android-ndk-r16b/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=c++11 -fopenmp -O0 -fno-limit-debug-info  -fPIC  ","defines":["zeuseesTracking_lib_EXPORTS"],"includePath":[{"path":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/include"},{"isSystem":true,"path":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/include"},{"isSystem":true,"path":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/include/opencv"},{"isSystem":true,"path":"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include"},{"isSystem":true,"path":"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include"},{"isSystem":true,"path":"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward"}],"isGenerated":false,"language":"CXX","sources":["mtcnn.cpp","tracking-lib.cpp"]}],"fullName":"libzeuseesTracking-lib.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a --sysroot /Users/yang/Documents/NDK/android-ndk-r16b/platforms/android-21/arch-arm64 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now","linkLibraries":"-lGLESv3 ../../../../../../../src/main/jniLibs/arm64-v8a/libncnn.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_video.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_highgui.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_videoio.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_objdetect.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_superres.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_ml.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_shape.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_stitching.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_calib3d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_videostab.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_features2d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_dnn.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_photo.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_flann.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_core.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgcodecs.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgproc.a -lz -ljnigraphics ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libquirc.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_video.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_calib3d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_features2d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_highgui.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_videoio.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_flann.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgcodecs.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibjpeg-turbo.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibwebp.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibpng.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibtiff.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibjasper.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libIlmImf.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgproc.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_core.a -lz ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libtbb.a -lc ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libcpufeatures.a -ldl -lm -llog ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libtegra_hal.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibprotobuf.a -latomic -lm \"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/libgnustl_static.a\"","linkerLanguage":"CXX","name":"zeuseesTracking-lib","sourceDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp","sysroot":"/Users/yang/Documents/NDK/android-ndk-r16b/sysroot","type":"SHARED_LIBRARY"}]},{"buildDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a/src/main/cpp","name":"zeuseesTracking-lib","sourceDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp","targets":[{"artifacts":["/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/build/intermediates/cmake/debug/obj/arm64-v8a/libzeuseesTracking-lib.so"],"buildDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/debug/arm64-v8a/src/main/cpp","fileGroups":[{"compileFlags":"-isystem /Users/yang/Documents/NDK/android-ndk-r16b/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=c++11 -fopenmp -O0 -fno-limit-debug-info  -fPIC  ","defines":["zeuseesTracking_lib_EXPORTS"],"includePath":[{"path":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/include"},{"isSystem":true,"path":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/include"},{"isSystem":true,"path":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342/sdk/native/jni/include/opencv"},{"isSystem":true,"path":"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include"},{"isSystem":true,"path":"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/include"},{"isSystem":true,"path":"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/include/backward"}],"isGenerated":false,"language":"CXX","sources":["mtcnn.cpp","tracking-lib.cpp"]}],"fullName":"libzeuseesTracking-lib.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a --sysroot /Users/yang/Documents/NDK/android-ndk-r16b/platforms/android-21/arch-arm64 -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now","linkLibraries":"-lGLESv3 ../../../../../../../src/main/jniLibs/arm64-v8a/libncnn.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_video.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_highgui.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_videoio.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_objdetect.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_superres.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_ml.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_shape.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_stitching.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_calib3d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_videostab.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_features2d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_dnn.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_photo.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_flann.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_core.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgcodecs.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgproc.a -lz -ljnigraphics ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libquirc.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_video.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_calib3d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_features2d.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_highgui.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_videoio.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_flann.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgcodecs.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibjpeg-turbo.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibwebp.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibpng.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibtiff.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibjasper.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libIlmImf.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_imgproc.a ../../../../../../../src/main/cpp/opencv342/sdk/native/staticlibs/arm64-v8a/libopencv_core.a -lz ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libtbb.a -lc ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libcpufeatures.a -ldl -lm -llog ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/libtegra_hal.a ../../../../../../../src/main/cpp/opencv342/sdk/native/3rdparty/libs/arm64-v8a/liblibprotobuf.a -latomic -lm \"/Users/yang/Documents/NDK/android-ndk-r16b/sources/cxx-stl/gnu-libstdc++/4.9/libs/arm64-v8a/libgnustl_static.a\"","linkerLanguage":"CXX","name":"zeuseesTracking-lib","sourceDirectory":"/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp","sysroot":"/Users/yang/Documents/NDK/android-ndk-r16b/sysroot","type":"SHARED_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
