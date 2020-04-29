@@ -21,7 +21,7 @@ ANDROID_ABI:UNINITIALIZED=armeabi-v7a
 ANDROID_NDK:UNINITIALIZED=/Users/yang/Documents/NDK/android-ndk-r16b
 
 //No help, variable specified on the command line.
-ANDROID_PLATFORM:UNINITIALIZED=android-18
+ANDROID_PLATFORM:UNINITIALIZED=android-19
 
 //No help, variable specified on the command line.
 CMAKE_ANDROID_ARCH_ABI:UNINITIALIZED=armeabi-v7a
@@ -199,7 +199,7 @@ CMAKE_STRIP:FILEPATH=/Users/yang/Documents/NDK/android-ndk-r16b/toolchains/arm-l
 CMAKE_SYSTEM_NAME:UNINITIALIZED=Android
 
 //No help, variable specified on the command line.
-CMAKE_SYSTEM_VERSION:UNINITIALIZED=18
+CMAKE_SYSTEM_VERSION:UNINITIALIZED=19
 
 //The CMake toolchain file
 CMAKE_TOOLCHAIN_FILE:FILEPATH=/Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake
@@ -217,7 +217,7 @@ Project_BINARY_DIR:STATIC=/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Androi
 Project_SOURCE_DIR:STATIC=/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app
 
 //Path to a library.
-log-lib:FILEPATH=/Users/yang/Documents/NDK/android-ndk-r16b/platforms/android-18/arch-arm/usr/lib/liblog.so
+log-lib:FILEPATH=/Users/yang/Documents/NDK/android-ndk-r16b/platforms/android-19/arch-arm/usr/lib/liblog.so
 
 //Value Computed by CMake
 zeuseesTracking-lib_BINARY_DIR:STATIC=/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/release/armeabi-v7a/src/main/cpp
