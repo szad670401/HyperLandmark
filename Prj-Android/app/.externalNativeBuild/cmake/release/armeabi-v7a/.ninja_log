@@ -1,0 +1,14 @@
+# ninja log v5
+0	1732	1592497779	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	6f923f0fff32e0c5
+1	4028	1592497781	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	a1fb2862e8a0ce21
+4029	4691	1592497782	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so	89caa29c70212e74
+3	3081	1592500688	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	a1fb2862e8a0ce21
+3082	3778	1592500689	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so	89caa29c70212e74
+4	1601	1592521676	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	6f923f0fff32e0c5
+4	3306	1592521678	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	a1fb2862e8a0ce21
+3306	3930	1592521679	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so	89caa29c70212e74
+2	4038	1592528517	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	a1fb2862e8a0ce21
+4040	4884	1592528517	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so	89caa29c70212e74
+3	2313	1592529994	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	6f923f0fff32e0c5
+4	4052	1592529996	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	a1fb2862e8a0ce21
+4052	4735	1592529997	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libzeuseesTracking-lib.so	89caa29c70212e74

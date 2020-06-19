@@ -2,14 +2,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.hyq.hm.hyperlandmark.FixedAspectRatioRelativeLayout
+    <com.zeusee.main.hyperlandmark.FixedAspectRatioRelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <SurfaceView
             android:id="@+id/surface_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-    </com.hyq.hm.hyperlandmark.FixedAspectRatioRelativeLayout>
+    </com.zeusee.main.hyperlandmark.FixedAspectRatioRelativeLayout>
     <SeekBar
         android:id="@+id/seek_bar_a"
         android:layout_width="match_parent"

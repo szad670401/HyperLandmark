@@ -1,0 +1,10 @@
+CMake Warning at /Users/yang/Documents/NDK/android-ndk-r16b/build/cmake/android.toolchain.cmake:63 (message):
+  Using custom NDK path (ANDROID_NDK is set):
+  /Users/yang/Documents/NDK/android-ndk-r16b
+Call Stack (most recent call first):
+  .externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  CMakeLists.txt
+
+
+Found OpenCV: /Users/yang/HyperLandmark/Prj-Android/app/src/main/cpp/opencv4.0 (found version "3.4.6") 
+Configuring done
