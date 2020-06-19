@@ -18,5 +18,9 @@ Detecting CXX compiler ABI info
 Detecting CXX compiler ABI info - done
 Detecting CXX compile features
 Detecting CXX compile features - done
+<<<<<<< HEAD
 Found OpenCV: /Users/yang/HyperLandmark/Prj-Android/app/src/main/cpp/opencv4.0 (found version "3.4.6") 
+=======
+Found OpenCV: /Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp/opencv342 (found version "3.4.6") 
+>>>>>>> 8646a00a7a3953b4d7a2e1e1debe78ddb66446cf
 Configuring done

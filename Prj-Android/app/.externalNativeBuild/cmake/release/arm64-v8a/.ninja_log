@@ -1,4 +1,5 @@
 # ninja log v5
+<<<<<<< HEAD
 0	3080	1592497773	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	1dd525c36a5a6d7e
 1	4993	1592497775	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	adcdc752941d5d05
 4994	6686	1592497777	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libzeuseesTracking-lib.so	565ab059bc3db9f0
@@ -12,3 +13,8 @@
 5	3091	1592529989	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	1dd525c36a5a6d7e
 7	5044	1592529990	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	adcdc752941d5d05
 5044	6611	1592529992	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libzeuseesTracking-lib.so	565ab059bc3db9f0
+=======
+0	4922	1588147840	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/mtcnn.cpp.o	9fe871f124d6daff
+1	8935	1588147844	src/main/cpp/CMakeFiles/zeuseesTracking-lib.dir/tracking-lib.cpp.o	593af566a53f0b07
+8937	11015	1588147846	../../../../build/intermediates/cmake/release/obj/arm64-v8a/libzeuseesTracking-lib.so	3a4ab40428a8d15f
+>>>>>>> 8646a00a7a3953b4d7a2e1e1debe78ddb66446cf

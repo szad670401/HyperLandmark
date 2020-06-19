@@ -23,7 +23,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ### APP
 
-- 体验 Android APP：[https://fir.im/HyperLandmark](https://fir.im/HyperLandmark)
+- 体验 Android APP：[http://demo.zeusee.com/HyperLandmark](http://demo.zeusee.com/HyperLandmark)
 
 ### Latest Update
 

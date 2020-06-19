@@ -1,10 +1,18 @@
 Executable : /Users/yang/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
 arguments : 
+<<<<<<< HEAD
 -H/Users/yang/HyperLandmark/Prj-Android/app
 -B/Users/yang/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/release/armeabi-v7a
 -DANDROID_ABI=armeabi-v7a
 -DANDROID_PLATFORM=android-19
 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/yang/HyperLandmark/Prj-Android/app/build/intermediates/cmake/release/obj/armeabi-v7a
+=======
+-H/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app
+-B/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/.externalNativeBuild/cmake/release/armeabi-v7a
+-DANDROID_ABI=armeabi-v7a
+-DANDROID_PLATFORM=android-19
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/build/intermediates/cmake/release/obj/armeabi-v7a
+>>>>>>> 8646a00a7a3953b4d7a2e1e1debe78ddb66446cf
 -DCMAKE_BUILD_TYPE=Release
 -DANDROID_NDK=/Users/yang/Documents/NDK/android-ndk-r16b
 -DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions

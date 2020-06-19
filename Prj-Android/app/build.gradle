@@ -6,17 +6,19 @@ android {
         applicationId "com.zeusee.main.hyperlandmark"
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
         externalNativeBuild {
             cmake {
-                cppFlags "-std=c++11 -frtti -fexceptions"
-                abiFilters 'armeabi-v7a', 'arm64-v8a'
-                version "3.10.2"
+                cmake {
+                    cppFlags "-std=c++11 -frtti -fexceptions"
+                    abiFilters 'armeabi-v7a', 'arm64-v8a'
+                    version "3.10.2"
+                }
             }
         }
-
     }
     buildTypes {
         release {

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /Users/yang/HyperLandmark/Prj-Android/app/src/main/cpp
+=======
+# Install script for directory: /Users/yang/Documents/zeuesee/HyperLandmark/Prj-Android/app/src/main/cpp
+>>>>>>> 8646a00a7a3953b4d7a2e1e1debe78ddb66446cf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
