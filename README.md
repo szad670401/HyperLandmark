@@ -59,7 +59,7 @@ Windows实现是基于免费intraface实现的，与android并不相同。
 
 ### Author
 
-- [北京智云视图科技有限公司( http://www.zeusee.com/)(contact@zeusee.com)
+- [北京智云视图科技有限公司] (http://www.zeusee.com/)(contact@zeusee.com)
 
 
 
