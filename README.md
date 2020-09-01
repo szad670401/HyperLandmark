@@ -21,9 +21,6 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 + 速度快，Android平台代码在 Qualcomm 820 (st) 单张人脸7ms (2018.08.14)
 + 增加多人脸跟踪
 
-### APP
-
-- 体验 Android APP：[http://demo.zeusee.com/ZeusFaceTrack](http://demo.zeusee.com/ZeusFaceTrack)
 
 ### Latest Update
 
@@ -55,14 +52,13 @@ Windows实现是基于免费intraface实现的，与android并不相同。
 ### Contact：
 
 关于人脸标定我们正在进行数据收集与算法开发，技术交流、捐献数据可以加入下群。
-+ 交流群 724142079
++ 交流群 529385694
 
 ### Author
 
 - [Jack Yu]( https://github.com/szad670401)(jack-yu-business@foxmail.com)
 
 
-- [北京智云视图科技有限公司] (http://www.zeusee.com/)(contact@zeusee.com)
 
 
 
