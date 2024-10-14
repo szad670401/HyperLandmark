@@ -6,7 +6,7 @@ Android代码基于深度学习,我们设计了高效的网络模型,该模型�
 
 ####  Note
 
-**2024.10.15**: 本项目已经停止维护，我们启动了一个新的更加面向专业的人脸相关开源项目。新的项目实现并集成了大部分SOTA的人脸相关算法，包括人脸识别、人脸检测、人脸（关键点）跟踪、人脸属性分析和活体检测等功能，具体项目地址可访问地址：[InspireFace](https://github.com/deepinsight/insightface/tree/master/cpp-package/inspireface)。
+**2024.10.15**: 本项目已经停止维护，我们启动了一个新的更加面向专业的人脸相关开源项目。新的项目实现并集成了大部分SOTA的人脸相关算法，包括人脸识别、人脸检测、人脸（关键点）跟踪、人脸属性分析和活体检测等功能，具体项目地址可访问：[InspireFace](https://github.com/deepinsight/insightface/tree/master/cpp-package/inspireface)。
 
 #### Related Resources
 + [基于HyperLandmark的活体检测](https://xiangzi.site/2019/04/19/iOS/%E6%B4%BB%E4%BD%93%E8%AF%86%E5%88%AB/)
